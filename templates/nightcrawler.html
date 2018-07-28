@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Alex Chu</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../static/css/main.css" />
+		<noscript><link rel="stylesheet" href="../static/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">ALEX CHU</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">About</a></li>
+							<li class="active"><a href="projects.html">Projects</a></li>
+							<li><a href="courses.html">Courses</a></li>
+							<li><a href="../static/files/AlexChuResume.pdf" target="_blank">Resume</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/alexchu28" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.linkedin.com/in/alchucam/" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/alchucam" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1><a href="#nav">Nightcrawler</a></h1>
+									<p> A web application that collects and analyzes news articles from different countries. </p>
+									<span class="image fit"><img src="../static/images/nightcrawler/tariffs2.jpg" alt="" /></span>
+								</header>
+								
+								<p><b>Nightcrawler</b> is a simple experimental website that I decided to make so to demonstrate & practice my ability in backend programming. Also, I'm interested in how different countries react to each other through the news articles.<br/><br/>
+
+								
+								<b>Nightcrawler</b> uses Python libraries, such as BeautifulSoup and NLTK, to crawl and analyze news articles from different news publishers, each representing different countries. The nytimes represents the New York Times (USA); the ecns represents English-language website of China News Service (China); the yonhap represents Yonhap News Agency (South Korea); and the japantimes represents The Japan Times (Japan). The analysis will be done on news articles to extract the information about its top 10 frequent words and sentiment scores to the
+								PostgreSQL database. The <i> sentiment scores </i> are scores in range from -1 to 1, where the highest score represents the most positive words
+								(most positive opinion) toward the news article subject. <br/><br/>
+								 In the <i> Analysis tab </i>, the user can check the current <i>international state of affairs</i> by finding keywords (name) of other countries in the selected country. I even took one more step by adding a database search ability, which the user can type their own keywords to check the database. The data is presented in a beautiful charts with help of a python library named HighCharts.
+								<span class="image fit"><img src="../static/images/nightcrawler/stories.jpg" alt="" /></span>
+								<span class="image fit"><img src="../static/images/nightcrawler/thai2.jpg" alt="" /></span>
+
+								<i>Things I've learned from this project</i>: Since it was my first personal project as well as my first Python project, I've learned a lot about Python and Django, as well as many Python libraries, such as BeautifulSoup, NLTK and HighCharts. I'ved learned a great deal about the MVC 
+								(Model-View-Controller) design pattern from utilizing Django framework. Django follows the traditional MVC (although with different terminology), and I've realized it is very crucial to deisgn MVC carefully; I've used two types of models in the application: one for storing sentiment analysis and top 10 frequent top words data, and another one for higher database level to store the combinatory information for the internatonal state of affairs. However, I've later found out, the second type of model was not necessarily since I could've just implement an additional Controller (type and search) function for the purpose. Additionally, since the news publisher publishes news articles in different timezone and Django doesn't implement timezone by default; it was an interesting lesson to unite the timezone to UTC 0. <br/><br/>
+
+								<i>Overall</i>, it was a very fun project for me to start learning about Python and Backend programming! I would love to use these knowledge on any future projects if possible. <br/><br/> 
+
+								<i>*Fun Fact*</i> I was REALLY hoping to add North Korea publisher into the project but I have to abandon that idea due to low and slow response on North Korea news publisher websites.
+								<br/><br/>
+								</p>
+								
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto:alexc8@uci.edu">alexc8[at]uci.edu</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.facebook.com/alexchu28" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.linkedin.com/in/alchucam/" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/alchucam" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Alex Chu</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../static/js/jquery.min.js"></script>
+			<script src="../static/js/jquery.scrollex.min.js"></script>
+			<script src="../static/js/jquery.scrolly.min.js"></script>
+			<script src="../static/js/browser.min.js"></script>
+			<script src="../static/js/breakpoints.min.js"></script>
+			<script src="../static/js/smoothscroll.min.js"></script>
+			<script src="../static/js/util.js"></script>
+			<script src="../static/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Alex Chu</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../static/css/main.css" />
+		<noscript><link rel="stylesheet" href="../static/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">ALEX CHU</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">About</a></li>
+							<li class="active"><a href="projects.html">Projects</a></li>
+							<li><a href="courses.html">Courses</a></li>
+							<li><a href="../static/files/AlexChuResume.pdf" target="_blank">Resume</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/alexchu28" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.linkedin.com/in/alchucam/" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/alchucam" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1><a href="#nav">Piano Simulator</a></h1>
+									<p> A MIPS program for creating a fun learning experience </p>
+									<span class="image fit"><img src="../static/images/pianosim/pianoSim.gif" alt="" /></span>
+								</header>
+								
+								<p><b>Piano Simulator</b> is a MIPS program that was written as part of the school project during my first year of learning programming.
+								The project assignment was a no-limit free assignment but I decided to make this program as it provides experience for basic MVC design pattern<br/><br/>
+
+								Using MARS, an GUI-based MIPS emulator, I've written the <b>Piano Simulator</b> with MIPS, an assembly language. The program is meant to simulate the real piano keys, and helps user to get familiarized with piano. The program contains musical notes from middle-C to upper/high-F including all the black and white keys in between; essentially, making it a 18-key keyboard. From the computer keyboard row from q to [ represents the black keys in real piano. For example, keyboard q represents C in piano; meanwhile, keyboard 9 represents high-C sharp in piano. <br/><br/>
+								<span class="image right"><img src="../static/images/pianosim/musicalNotes.jpg" alt="" /></span>The user can record their play in 'Keyboard and Display MMIO Simulator' and save it to a designated file, musicalNotes.ntxt. In the 'Bitmap Display', the notes will fall from the top; the user needs to hit the matching keyboard key to match the falling notes as it hits the line at the bottom. If the user is able to hit the note at the right time, the mark of the line will flash as pink color; if not, it will flash as red color. Additionally, the user can change the volume and instruments in settings.<br/><br/>
+
+								
+								<b>Piano Simulator</b> helped me understand the basic MVC design pattern, where I've thought about how the user can record and save their plays into a textfile, and I've also needed to think about how data should be stored, so that it will be loaded to the program in a real time smoothly regardless of user's input. Furthermore, I had to think about how to connect these save/load feature with a color change feature which depends on hitting the falling nodes at the right time. Funny enough, what gave me hard time was not the programming itself, but the lack of preparing MVC design pattern beforehand. However, once I set every roadmap clear, I breezed through (although a relatively long coding amount) the project quickly.
+								<span class="image fit"><img src="../static/images/pianosim/codesample.jpg" alt="" /></span>
+								</p>
+
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto:alexc8@uci.edu">alexc8[at]uci.edu</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.facebook.com/alexchu28" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.linkedin.com/in/alchucam/" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/alchucam" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Alex Chu</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../static/js/jquery.min.js"></script>
+			<script src="../static/js/jquery.scrollex.min.js"></script>
+			<script src="../static/js/jquery.scrolly.min.js"></script>
+			<script src="../static/js/browser.min.js"></script>
+			<script src="../static/js/breakpoints.min.js"></script>
+			<script src="../static/js/smoothscroll.min.js"></script>
+			<script src="../static/js/util.js"></script>
+			<script src="../static/js/main.js"></script>
+
+	</body>
+</html>
