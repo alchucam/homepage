@@ -1,4 +1,4 @@
 markdown: redcarpet
-baseurl: /homepage
+baseurl: /
 exclude: ['README.md','LICENSE']
 permalink: pretty
