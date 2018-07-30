@@ -13,18 +13,7 @@
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>HELLO,<br />
-						MY NAME IS ALEX</h1>
-						<p> I'm an aspiring <b>backend programmer</b>!<br />
-						I am currently studying in University of California, Irvine, which is located in one of the most beautiful cities. <br />
-						I have a very interesting background spanning from science to multilanguage. <br />
-						My interest lies in improving multicultural society through the power of programming. </p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+				{% if page.url == '/index.html' or page.url == '/' %} {% include intro.html %} {% endif %}
 
 				<!-- Header -->
 					<header id="header">
